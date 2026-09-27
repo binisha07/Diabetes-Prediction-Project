@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #a8e6cf 0%, #6ec6c1 50%, #4a90a4 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #1f6f78;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #2d3436;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: #4ecdc4;
+    outline: none;
+}
+
+.hint {
+    font-size: 11px;
+    color: #999;
+    margin: 3px 0 0 0;
+}
+
+button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px;
+    background: linear-gradient(135deg, #4ecdc4, #1f9e93);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(31, 158, 147, 0.4);
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #999;
+    margin-top: 22px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.result {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.high-risk {
+    background-color: #ffe3e3;
+    color: #d63031;
+    border: 2px solid #ffb3b3;
+}
+
+.low-risk {
+    background-color: #e3fbe9;
+    color: #00997a;
+    border: 2px solid #a8e6cf;
+}
+
+.probability {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.explanation {
+    font-size: 13px;
+    color: #636e72;
+    text-align: center;
+    margin-top: 14px;
+    line-height: 1.5;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    padding: 10px;
+    color: #1f6f78;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #4ecdc4;
+    border-radius: 8px;
+}
+
+.back-link:hover {
+    background-color: #4ecdc4;
+    color: white;
+}

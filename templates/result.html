@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Your Result</h1>
+
+        {% if result == "Diabetic Risk" %}
+            <p class="result high-risk">⚠️ {{ result }}</p>
+            <p class="probability">Estimated probability: {{ probability }}%</p>
+            <p class="explanation">
+                Your health values suggest a higher chance of diabetes.
+                This isn't a diagnosis — it just means it may be worth
+                getting a proper blood test and talking to a doctor soon.
+            </p>
+        {% else %}
+            <p class="result low-risk">✅ {{ result }}</p>
+            <p class="probability">Estimated probability: {{ probability }}%</p>
+            <p class="explanation">
+                Your health values suggest a lower chance of diabetes right now.
+                Keep up healthy habits, and consider regular checkups anyway.
+            </p>
+        {% endif %}
+
+        <p class="disclaimer">
+            This is not a medical diagnosis. Please consult a doctor for proper testing
+            and advice.
+        </p>
+
+        <a href="/" class="back-link">Check Another</a>
+    </div>
+
+</body>
+</html>
